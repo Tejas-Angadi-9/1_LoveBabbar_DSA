@@ -21,3 +21,5 @@ int main(){
 
     cout<<"Majority Element: "<<majorityElement(arr, n)<<endl;
 }
+
+// TC: O(n^2)   SC: O(1)
