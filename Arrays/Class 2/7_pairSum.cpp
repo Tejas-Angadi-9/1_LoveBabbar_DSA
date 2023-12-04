@@ -5,10 +5,9 @@ using namespace std;
 void pairSum(vector<int> arr, int n, int sum){
 
     for(int i=0; i<n; i++){
-        int val = arr[i];
         for(int j=i+1; j<n; j++){
-            if(val + arr[j] == sum){
-                cout<<"Pair Found: " << val<<","<<arr[j]<<endl;
+            if(arr[i] + arr[j] == sum){
+                cout<<"Pair Found: " << arr[i]<<","<<arr[j]<<endl;
             }
         }
     }

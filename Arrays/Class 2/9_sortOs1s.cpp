@@ -14,7 +14,7 @@ vector<int> sortNumbers(vector<int> arr, int n){
 }
 
 int main(){
-    vector<int> arr = {0,1,1,0,1,0,1,1,0,0};
+    vector<int> arr = {0,1,1,0,1,0,1,1,0,0,1,0,1,1,0,0,1};
     int n = arr.size();
 
     vector<int> ans = sortNumbers(arr, n);
