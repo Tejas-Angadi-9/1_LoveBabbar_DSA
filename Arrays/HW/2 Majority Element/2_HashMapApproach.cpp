@@ -17,7 +17,7 @@ int majorityElement(vector<int> arr, int n){
             return it.first;
     }
 
-    // STEP 5: Return -1 when there is no majority element
+    // STEP 5: Return -1 if there no majority element is found
     return -1;
 }
 
