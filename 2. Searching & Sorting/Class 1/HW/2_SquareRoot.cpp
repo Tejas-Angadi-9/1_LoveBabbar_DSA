@@ -18,10 +18,23 @@ int findSquareRoot(int n){
     return ans;
 }
 
+double sqWithDecimal(int n, double finalAns, int precision){
+    double step = 0.1;
+    double ans = 0.0;
+    for(int i=0; i<precision; i++){
+        for(double j=finalAns; j * j <= n; j+=step)
+            ans = j;
+        step /= 10.0;
+    }
+    return ans;
+}
+
 int main(){
     int n = 11;
     int ans = findSquareRoot(n);
     cout<<"Square Root: "<<ans<<endl;
+    double sqDecimal = sqWithDecimal(n, ans, 3);
+    cout<<sqDecimal<<endl;
 }
 
 // TC: O(logN)  SC: O(1)
