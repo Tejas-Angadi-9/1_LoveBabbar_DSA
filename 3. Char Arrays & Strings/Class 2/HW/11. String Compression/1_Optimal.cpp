@@ -38,3 +38,5 @@ int main(){
     int ans = compress(s);
     cout<<"Length of new array: "<<ans<<endl;
 }
+
+// TC: O(n)     SC: O(1)
