@@ -1,6 +1,8 @@
-# Love Babbar Supreme Batch
+#Data Structures & Algorithms
 
-## This repo contains all the codes from Love Babbar's supreme batch
+## Love Babbar Supreme Batch
+
+### This repo contains all the codes from Love Babbar's supreme batch
 ```
 1. Arrays
 2. Searching and Sorting
