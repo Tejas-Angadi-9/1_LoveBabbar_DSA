@@ -7,4 +7,4 @@ int main(){
     cout<<cptr<<endl;
     cout<<*cptr<<endl;
     cout<<&cptr<<endl;
-}
+} 
