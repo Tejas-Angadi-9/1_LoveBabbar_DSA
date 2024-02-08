@@ -13,4 +13,4 @@ int main(){
     solve(p);
     cout<<p<<endl;
     cout<<*p<<endl;     // This gives garbarge value as that address is not present in the symbol
-}
+} 
