@@ -25,5 +25,4 @@ int main(){
     int i = 0;
 
     printPermutation(str, i);
-    cout<<str<<endl;
 }
