@@ -1,3 +1,5 @@
+//! Creating 2 copy arrays
+
 #include<bits/stdc++.h>
 using namespace std;
 
