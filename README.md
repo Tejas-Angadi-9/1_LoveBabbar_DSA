@@ -9,4 +9,6 @@
 3. Char Arrays & Strings
 4. Basic Maths & Pointers
 5. Recursion
+6. Divide & Conquer
+7. OOPS
 ```
