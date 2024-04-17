@@ -11,4 +11,5 @@
 5. Recursion
 6. Divide & Conquer
 7. OOPS
+8. Linked List
 ```
