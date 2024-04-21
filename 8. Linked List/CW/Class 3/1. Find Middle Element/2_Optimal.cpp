@@ -43,12 +43,13 @@ int findLength(Node* head){
 int findMiddleElement(Node* head){
     Node* slow = head;
     Node* fast = head; 
-    while(fast != NULL){
+    while(fast != NULL && fast->next != NULL){
         fast = fast->next;
-        if(slow != NULL && fast != NULL){
+        if(slow != NULL && fast->next != NULL){
             fast = fast->next;
             slow = slow->next;
         }
+        // else if(fast->next == NULL)  break;      // Optional -> Use it when condition is not used in while loop
     }
     return slow->data;
 }
@@ -63,6 +64,8 @@ void print(Node* head){
 int main(){
     Node* head = NULL;
     Node* tail = NULL;
+    insertAtHead(head, tail, 6);
+    insertAtHead(head, tail, 6);
     insertAtHead(head, tail, 5);
     insertAtHead(head, tail, 4);
     insertAtHead(head, tail, 3);
@@ -73,4 +76,4 @@ int main(){
     cout<<"Middle Element: "<<findMiddleElement(head)<<endl;
 }
 
-// TC: O(n)
+// TC: O(n)     SC: O(1)
