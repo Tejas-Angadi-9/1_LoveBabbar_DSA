@@ -12,4 +12,5 @@
 6. Divide & Conquer
 7. OOPS
 8. Linked List
+9. Stacks
 ```
