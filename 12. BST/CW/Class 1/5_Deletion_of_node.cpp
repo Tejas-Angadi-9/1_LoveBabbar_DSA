@@ -190,30 +190,30 @@ Node* deleteNodeInBST(Node* root, int target) {
 			//delete inorder predecessor from left subtree
 			root->left = deleteNodeInBST(root->left,inorderPre);
 			return root;
-			
-		}
-		
+        }
 	}
 	else if(target > root -> data) {
 		//right jana chahiye
+		// root->right =  deleteNodeInBST(root->right, target);
 		root->right =  deleteNodeInBST(root->right, target);
 	}
 	else if(target < root->data) {
 		//left jana chahioye
+		// root->left = deleteNodeInBST(root->left, target);
 		root->left = deleteNodeInBST(root->left, target);
 	}
-	return root;
+	// return root;
 }
 
 
 
 int main() {
-	  Node* root = NULL;
-	  cout << "Enter the data for Node " << endl;
-	  takeInput(root);
-	  cout << "Printing the tree" << endl;
-	  levelOrderTraversal(root);
-	  cout << endl;
+	Node* root = NULL;
+	cout << "Enter the data for Node " << endl;
+	takeInput(root);
+	cout << "Printing the tree" << endl;
+	levelOrderTraversal(root);
+	cout << endl;
 	//   cout << "Printing Inorder: " << endl;
 	//   inOrderTraversal(root);
 	//   cout << endl;
