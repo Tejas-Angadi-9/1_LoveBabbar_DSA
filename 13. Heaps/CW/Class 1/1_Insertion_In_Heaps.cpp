@@ -35,6 +35,32 @@ class Heap{
         //     index = index/2;
         // }
     }
+
+    void deletion(){
+        // Swap first and last element from the array
+        arr[1] = arr[size-1];
+        size--;
+
+        int index = 1;
+        while(index < size){    
+            int leftChildIndex = 2 * index;
+            int rightChildIndex = 2 * index + 1;
+            int largest = index;
+
+            if(leftChildIndex < size && arr[largest] < arr[leftChildIndex]){
+                largest = leftChildIndex;
+            }
+            if(rightChildIndex > size && arr[largest] < arr[rightChildIndex]){
+                largest = rightChildIndex;
+            }
+            if(largest == index)
+                break;
+            else{
+                swap(arr[index], arr[largest]);
+                index = largest;
+            }
+        } 
+    }
 };
 
 int main(){
@@ -55,10 +81,14 @@ int main(){
     h.insert(50);
     h.insert(30);
     h.insert(70);
-    h.insert(40);
     h.insert(80);
     h.insert(110);
     cout<<"\nPrinting the heap after insertion: "<<endl;
+    for(int i=0; i<=h.size; i++){
+        cout<<h.arr[i]<<" ";
+    }
+    h.deletion();
+    cout<<"\nPrinting the heap after deletion: "<<endl;
     for(int i=0; i<=h.size; i++){
         cout<<h.arr[i]<<" ";
     }
